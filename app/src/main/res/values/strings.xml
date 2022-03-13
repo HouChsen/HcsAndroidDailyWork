@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">第一个app</string>
+    <string name="str">hello world</string>
+    <string name="button_str">dian wo...</string>
+</resources>
