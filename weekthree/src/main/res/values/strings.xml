@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">weekThree</string>
+    <string name="viewName">text</string>
+    <string name="buttonName">poem</string>
+    <string name="EditName">subject</string>
+    <string name="EditName2">message</string>
+    <string name="a">登鹳雀楼</string>
+    <string name="b">白日依山尽，</string>
+    <string name="c">黄河入海流。</string>
+    <string name="d">欲穷千里目，</string>
+    <string name="e">更上一层楼。</string>
+    <string name="f">这首诗写诗人在登高望远中表现出来的不凡的胸襟抱负，反映了盛唐时期人们积极向上的进取精神。
+前两句写所见。“白日依山尽”写山，“黄河入海流”写水。诗人遥望一轮落日向着楼前一望无际、连绵起伏的群山西沉，在视野的尽头冉冉而没；目送流经楼前下方的黄河奔腾咆哮、滚滚南来，又在远处折而东向，流归大海。诗人运用极其朴素、极其浅显的语言，既高度形象又高度概括地把进入广大视野的万里河山，收入短短十个字中，画面宽广辽远。</string>
+
+
+</resources>

@@ -3,8 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidStudioProject.iml" filepath="$PROJECT_DIR$/AndroidStudioProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activitylifttest/activitylifttest.iml" filepath="$PROJECT_DIR$/activitylifttest/activitylifttest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/interactactivity/interactactivity.iml" filepath="$PROJECT_DIR$/interactactivity/interactactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weekthree/weekthree.iml" filepath="$PROJECT_DIR$/weekthree/weekthree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weekthree2/weekthree2.iml" filepath="$PROJECT_DIR$/weekthree2/weekthree2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weekthree3/weekthree3.iml" filepath="$PROJECT_DIR$/weekthree3/weekthree3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weekthree4/weekthree4.iml" filepath="$PROJECT_DIR$/weekthree4/weekthree4.iml" />
     </modules>
   </component>
 </project>
