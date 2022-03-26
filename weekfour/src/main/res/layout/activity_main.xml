@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@color/black"
+    android:orientation="vertical"
+    style="@style/back"
+    android:padding="@dimen/LaySize"
+    android:showDividers="middle">
+
+    <!--第1部分：选择身份（单选按钮组）和疫苗（复选框） -->
+    <LinearLayout
+        android:id="@+id/linearLayoutIDVaccine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/LaySize"
+        android:layout_marginRight="@dimen/LaySize"
+        android:divider="@color/black"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/LaySize"
+        android:showDividers="middle">
+
+        <!--第1部分左侧：选择身份  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/maxSize"
+            android:layout_marginRight="@dimen/maxSize"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/who"
+                android:textSize="@dimen/sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioTeacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/teacher" />
+
+                <RadioButton
+                    android:id="@+id/radioStudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/student" />
+
+                <RadioButton
+                    android:id="@+id/radioOthers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/otherPeople" />
+            </RadioGroup>
+        </LinearLayout>
+        <!--第1部分右侧：选择疫苗  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/minSize"
+            android:paddingStart="@dimen/minSize">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vaccine"
+                android:textSize="@dimen/sp" />
+
+            <CheckBox
+                android:id="@+id/kexing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kexing" />
+
+            <CheckBox
+                android:id="@+id/guoyao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guoyao" />
+
+            <CheckBox
+                android:id="@+id/kangxinuo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kangxinuo" />
+
+        </LinearLayout>
+        <!--这里将会再有一个垂直方向的布局-->
+    </LinearLayout>
+
+
+    <!--第2部分：忘记上网课由谁叫及适应窄屏 -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="0">
+
+        <TableRow android:layout_marginBottom="@dimen/minSize">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:text="@string/masterAsk"
+                android:textSize="@dimen/sp" />
+
+            <Switch
+                android:id="@+id/switchMonitorCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/minSize">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/roomMasterAsk"
+                android:textSize="@dimen/sp" />
+
+            <Switch
+                android:id="@+id/switchRoomLeaderCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+        </TableRow>
+        <!--  第2部分最后一个功能：适应窄屏  -->
+        <TableRow android:layout_marginBottom="@dimen/minSize">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="@string/ThisPageLayout"
+                android:textSize="@dimen/sp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButtonWideScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+        </TableRow>
+    </TableLayout>
+
+
+    <!--第3部分：按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:layout_marginEnd="@dimen/minSize"
+            android:layout_marginRight="@dimen/minSize"
+            android:layout_weight="1"
+            android:text="@string/yourChoice" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bigRed"
+            android:text="@string/deleteAllChoice" />
+    </LinearLayout>
+
+
+    <!--第4部分：信息区（文本框） -->
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/notChoice" />
+</LinearLayout>

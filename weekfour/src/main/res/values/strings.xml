@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">weekfour</string>
+    <string name="who">你的身份是:</string>
+    <string name="teacher">老师</string>
+    <string name="student">学生</string>
+    <string name="otherPeople">其他</string>
+    <string name="vaccine">疫苗：</string>
+    <string name="kexing">科兴</string>
+    <string name="guoyao">国药</string>
+    <string name="kangxinuo">康希诺</string>
+    <string name="ThisPageLayout">本页布局：适应窄屏</string>
+    <string name="yourChoice">你的选择:</string>
+    <string name="deleteAllChoice">清除选择</string>
+    <string name="notChoice">还没有做选择</string>
+    <string name="youAreTeacher">你是老师</string>
+    <string name="youAreStudent">你是学生</string>
+    <string name="youAreBothNot">你不是老师也不是学生</string>
+    <string name="getKexing">你接种了科兴疫苗</string>
+    <string name="getGuoyao">你接种了国药疫苗</string>
+    <string name="getKangxinuo">你接种了康希诺疫苗</string>
+    <string name="notGetKexing">你未接种了科兴疫苗</string>
+    <string name="notGetKangxinuo">你未接种了康希诺疫苗</string>
+    <string name="notGetGuoyao">你未接种了国药疫苗</string>
+    <string name="masterAsk">忘记了上网课时间让班长叫</string>
+    <string name="roomMasterAsk">忘记了上网课时间让舍长叫</string>
+    <string name="masterNotAsk">忘记了上网课时间不让班长叫</string>
+    <string name="roomMasterNotAsk">忘记了上网课时间不让舍长叫</string>
+    <string name="NarrowScreenSetting">窄屏设置</string>
+    <string name="WideScreenSetting">宽屏设置</string>
+    <string name="enter">\n</string>
+    <string name="TheVaccineYouHad">你打过的疫苗：</string>
+    <string name="master">班长</string>
+    <string name="roomMaster">舍长</string>
+    <string name="NarrowScreen">窄屏</string>
+    <string name="WideScreem">宽屏</string>
+    <string name="TheCurrentDisplayModeIs">现在的显示模式是：</string>
+    <string name="goodYouth">(自律好青年)</string>
+    <string name="whoAsk">忘了上网课谁叫你</string>
+    <string name="UnvaccinatedList">未接种清单内的疫苗</string>
+    <string name="no.1">1. </string>
+    <string name="no.2">2. </string>
+    <string name="no.3">3. </string>
+    <string name="empty"></string>
+
+
+
+
+    </resources>

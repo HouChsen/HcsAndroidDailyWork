@@ -1,1 +1,1 @@
-include ':app', ':interactactivity', ':activitylifttest', ':weekthree', ':weekthree2', ':weekthree3', ':weekthree4'
+include ':app', ':interactactivity', ':activitylifttest', ':weekthree', ':weekthree2', ':weekthree3', ':weekthree4', ':weekfour'
