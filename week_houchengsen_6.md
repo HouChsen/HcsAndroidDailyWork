@@ -47,5 +47,6 @@ HandleDemoActivity，AdvertiseActivity
 1. 完成一个广告轮播的界面，在Handle控制下，多幅图片轮番呈现。
 #### 完成过程中遇到的问题及解决办法
 1. 点击按钮没有跳转（没有在mian函数初始化相应按钮并注册监听器）
+1. R.anim.slide_in_left报错：改成android.R.anim.slide_in_left
 #### 完成该实践项目的收获及感想
 1. 

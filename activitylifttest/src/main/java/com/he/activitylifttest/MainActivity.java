@@ -10,15 +10,16 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG="MainActivity";
-    private Button btnGo;
+    private Button btnGoo;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d(TAG,"执行了onCreate");/**/
 
-        btnGo=(Button) findViewById(R.id.btnGo);
-        btnGo.setOnClickListener(new View.OnClickListener(){
+        btnGoo=(Button) findViewById(R.id.btnGo);
+
+        btnGoo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(MainActivity.this,Main2Activity.class);
@@ -66,9 +67,5 @@ public class MainActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         Log.d(TAG,"执行了onRestart");
-
     }
-
-
-
 }

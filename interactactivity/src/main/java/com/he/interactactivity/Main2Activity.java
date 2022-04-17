@@ -19,8 +19,9 @@ public class Main2Activity extends AppCompatActivity {
         msg=(TextView) findViewById(R.id.receiceMsg);
         btn=(Button) findViewById(R.id.feedbackBtn);
 
-        Intent intent =getIntent();
-        msg.setText(intent.getIntExtra("num",0)+";"+intent.getStringArrayExtra("msg"));
+        Intent intent=getIntent();
+        Bundle bundle=intent.getExtras();
+        msg.setText(bundle.getInt("num",0)+";"+bundle.getString("msg"));
 
         btn.setOnClickListener(new View.OnClickListener(){
             @Override

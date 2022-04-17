@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
                 bundle.putInt("num",1);
                 bundle.putString("msg",editHello.getText().toString());
 
-
-
                 Intent intent = new Intent(MainActivity.this, Main2Activity.class);
                 intent.putExtras(bundle);
 

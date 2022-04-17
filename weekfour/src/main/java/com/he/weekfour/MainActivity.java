@@ -52,7 +52,6 @@ public class MainActivity extends Activity {
         checkBoxKexing = (CheckBox)findViewById(R.id.kexing);
         checkBoxGuoyao = (CheckBox)findViewById(R.id.guoyao);
         checkBoxKangxinuo = (CheckBox)findViewById(R.id.kangxinuo);
-
         //设置复选框按钮的事件监听
         checkBoxKexing.setOnCheckedChangeListener(checkBoxChangeListener);
         checkBoxGuoyao.setOnCheckedChangeListener(checkBoxChangeListener);

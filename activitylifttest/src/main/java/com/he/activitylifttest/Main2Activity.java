@@ -17,7 +17,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Log.d(TAG,"执行了onCreate");
 
-        btnBack=(Button) findViewById(R.id.btnGo);
+        btnBack=(Button) findViewById(R.id.btnBack);
         btnBack.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

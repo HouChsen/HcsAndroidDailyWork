@@ -21,18 +21,33 @@ public class MainActivity extends Activity {
         showText=(TextView) findViewById(R.id.showText);
         clickBtn =(Button) findViewById(R.id.clickBtn);
 
-        clickBtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                showText.setText("按钮被单击了");
-            }
-        });
-        showText.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Toast.makeText(MainActivity.this,"文本框被点了！！！",Toast.LENGTH_LONG).show();
-            }
-        });
+        showText.setOnClickListener(onClickListener);
+        clickBtn.setOnClickListener(onClickListener);
+//        clickBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Toast.makeText(MainActivity.this,"按钮被点了！！！",Toast.LENGTH_LONG).show();
+//            }
+//        });
+//        showText.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                Toast.makeText(MainActivity.this,"文本框被点了！！！",Toast.LENGTH_LONG).show();
+//            }
+//        });
     }
+    private View.OnClickListener onClickListener= new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()) {
+                case R.id.showText:
+                    Toast.makeText(MainActivity.this,"文本框被点了！！！",Toast.LENGTH_LONG).show();
+                case R.id.clickBtn:
+                    Toast.makeText(MainActivity.this,"按钮被点了！！！",Toast.LENGTH_LONG).show();
+            }
+        }
+    };
+
+
 
 }
