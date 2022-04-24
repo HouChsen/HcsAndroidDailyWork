@@ -53,9 +53,9 @@ public class MainActivity extends Activity {
         checkBoxGuoyao = (CheckBox)findViewById(R.id.guoyao);
         checkBoxKangxinuo = (CheckBox)findViewById(R.id.kangxinuo);
         //设置复选框按钮的事件监听
-        checkBoxKexing.setOnCheckedChangeListener(checkBoxChangeListener);
-        checkBoxGuoyao.setOnCheckedChangeListener(checkBoxChangeListener);
-        checkBoxKangxinuo.setOnCheckedChangeListener(checkBoxChangeListener);
+        checkBoxKexing.setOnCheckedChangeListener(switchChangeListener);
+        checkBoxGuoyao.setOnCheckedChangeListener(switchChangeListener);
+        checkBoxKangxinuo.setOnCheckedChangeListener(switchChangeListener);
 
         //初始化开关组件
         switchMonitorCAll = (Switch)findViewById(R.id.switchMonitorCall);
@@ -170,6 +170,27 @@ public class MainActivity extends Activity {
                         textReslut.setText(R.string.WideScreenSetting);
                         linearLayoutIDVacccine.setOrientation(LinearLayout.HORIZONTAL);
                         linearLayoutIDVacccine.setShowDividers(LinearLayout.SHOW_DIVIDER_NONE);
+                    }
+                    break;
+                case R.id.kexing:
+                    if (b) {
+                        textReslut.setText(R.string.getKexing);
+                    } else {
+                        textReslut.setText(R.string.notGetKexing);
+                    }
+                    break;
+                case R.id.guoyao:
+                    if (b) {
+                        textReslut.setText(R.string.getGuoyao);
+                    } else {
+                        textReslut.setText(R.string.notGetGuoyao);
+                    }
+                    break;
+                case R.id.kangxinuo:
+                    if (b) {
+                        textReslut.setText(R.string.getKangxinuo);
+                    } else {
+                        textReslut.setText(R.string.notGetKangxinuo);
                     }
                     break;
             }

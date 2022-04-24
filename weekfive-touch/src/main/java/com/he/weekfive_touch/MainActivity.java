@@ -50,15 +50,15 @@ public class MainActivity extends AppCompatActivity {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN://手指按下
                 drawView.x = (int) event.getX(); // 改变 x 坐标
-                drawView.y = (int) event.getY() - 100; // 改变 y 坐标
+                drawView.y = (int) event.getY(); // 改变 y 坐标
                 break;
             case MotionEvent.ACTION_MOVE: //手指移动
                 drawView.x = (int) event.getX();// 改变 x 坐标
-                drawView.y = (int) event.getY() - 100;// 改变 y 坐标
+                drawView.y = (int) event.getY()-100;// 改变 y 坐标
                 break;
             case MotionEvent.ACTION_UP://手指抬起
-                drawView.x = -360;// 改变 x 坐标
-                drawView.y = -360;// 改变 y 坐标
+                drawView.x = (int) event.getX();// 改变 x 坐标
+                drawView.y = (int) event.getY();// 改变 y 坐标
                 break;
         }
         drawView.postInvalidate();

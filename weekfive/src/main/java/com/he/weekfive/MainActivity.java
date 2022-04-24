@@ -172,13 +172,13 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.chooseUniBtn:
 //处理“我的大学”
-//在下面体验内容型对话框
+//在下面体验内容型单选对话框
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     myUniversity = "";
                     builder.setTitle("选择我的大学")
                             .setIcon(R.drawable.university)
                             .setSingleChoiceItems(universityNames, //选项来自universityNames 数组
-                                    -1, //默认为 0 表示选中第一个项目, -1 代表无预选项目
+                                    0, //默认为 0 表示选中第一个单选项目, -1 代表无预选项目
                                     new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
@@ -212,12 +212,12 @@ public class MainActivity extends AppCompatActivity {
 //在下面体验内容型对话框（复选框）
                     AlertDialog.Builder builder2 = new AlertDialog.Builder(MainActivity.this);
                     builder2.setTitle("选择我喜欢的大学")
-                            .setIcon(R.drawable.university)
+                            .setIcon(R.drawable.university)//private String[] universityNames = {"烟台大学", "北京大学", "清华大学"};
                             .setMultiChoiceItems(universityNames, likeUniversitys,
                                     new DialogInterface.OnMultiChoiceClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialogInterface, int i, boolean b) {
-                                            likeUniversitys[i] = b;
+                                            likeUniversitys[i] = b;//private boolean[] likeUniversitys = {false, false, false};
                                         }
                                     })
                             .setPositiveButton("确认", new DialogInterface.OnClickListener() {
@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.timeBtn:
 //处理“选择时间”
-//在下面体验选择日期的对话框
+//在下面体验选择时间的对话框
                     TimePickerDialog timePicker = new TimePickerDialog(MainActivity.this,
                             new TimePickerDialog.OnTimeSetListener() {
                                 @Override
