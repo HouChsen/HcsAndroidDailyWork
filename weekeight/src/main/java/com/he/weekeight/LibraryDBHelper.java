@@ -15,16 +15,16 @@ import android.util.Log;
 
 public class LibraryDBHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "library.db";
-    private static final String READERS = "readers";
-    private static final String BOOKS = "books";
-    private static final String BORROWS = "borrows";
+    private static final String DATABASE_NAME = "library.db";//自己起的名字
+    private static final String READERS = "readers";//自己建立的表的名字
+    private static final String BOOKS = "books";//自己建立的表的名字
+   // private static final String BORROWS = "borrows";//自己建立的表的名字
     public LibraryDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String CREATE_READERS =
+        String CREATE_READERS =//自己建立的表
                 "create table readers(" +
                         "reader_id integer primary key," +
                         "reader_number text," +
@@ -34,7 +34,7 @@ public class LibraryDBHelper extends SQLiteOpenHelper {
                         "reader_password text ," +
                         "reader_createtime text)";
         sqLiteDatabase.execSQL(CREATE_READERS);
-        String CREATE_BOOK =
+        String CREATE_BOOK =//自己建立的表
                 "create table books(" +
                         "book_id integer primary key," +
                         "book_name text," +

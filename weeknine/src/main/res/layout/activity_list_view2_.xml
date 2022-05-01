@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 添加按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/addListView2Edt"
+            android:layout_width="212dp"
+            android:layout_height="wrap_content"></EditText>
+
+        <Button
+            android:id="@+id/addListView2Btn"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:text="添加"></Button>
+    </LinearLayout>
+    <!-- 默认的ListView -->
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:drawSelectorOnTop="false" />
+
+    <!-- 此处id="@android:id/list"很关键，可保证用getListView来获取ListView对象。
+    请将之换为一般的"@+id/xxx"形式的自定义id看看发生了什么?在Logcat中查看一下日志怎么提示 -->
+
+</LinearLayout>

@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
-//import com.he.weeksix.R;
+import com.he.weeksix.R;
 //        android:roundIcon="@mipmap/ic_launcher_round"
 //android:tooltipText="调查问卷"
 
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
                         case R.id.myBroadcastBnt: //发送广播
                             //很多参考书中的示例未setComponent而导致收不到广播
                             intent.setComponent(new ComponentName(getPackageName(),
-                                    "com.he.intentsdemo.MyBroadcastReceiver"));
+                                    "com.he.weeksix.MyBroadcastReceiver"));
                             intent.putExtra("broadcast_content", "自己发广播自己玩。");
                             Log.d("提示", "发送广播");
                             sendBroadcast(intent);
