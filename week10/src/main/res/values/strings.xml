@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">week10</string>
+    <string name="content3">1. 在TabHost标签中包含TabWidget和FrameLayout构成TabHost应用的布局。\n
+2. 利用setIndicator可以设置标签的文字标题和图标，但仅当文字为空时图标才显示。\n
+3. 为了在标签中同时显示图形和文字，可以：（1）将文字合并入图片中；（2）利用自定义标签部分的布局。</string>
+    <string name="news_title">新闻标题</string>
+    <string name="news_detail">新闻内容</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
