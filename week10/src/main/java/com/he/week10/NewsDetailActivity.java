@@ -8,14 +8,17 @@ import android.os.Bundle;
 public class NewsDetailActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.activity_news_detail);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_news_detail);
 
-        Bundle bundle = getIntent().getExtras(); if (bundle != null) {
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
             NewsDetailFragment detailFragment = new NewsDetailFragment();
             detailFragment.setArguments(bundle);
             FragmentManager manager = getSupportFragmentManager();
             FragmentTransaction transaction = manager.beginTransaction();
-            transaction.replace(R.id.detail_fragment_container,  detailFragment);
+            transaction.replace(R.id.detail_fragment_container, detailFragment);
             transaction.commit();
         }
     }
