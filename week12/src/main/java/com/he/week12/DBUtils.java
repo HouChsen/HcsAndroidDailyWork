@@ -12,14 +12,14 @@ import java.sql.Statement;
  */
 
 public class DBUtils {
-    private static String user="root";
-    private static String password="mypassword";
+    private static String user="hcs";
+    private static String password="123456";
 
     private static Connection getConn(String dbName){
         Connection connection=null;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            String url="jdbc:mysql://192.168.0.104:3306/"+dbName;
+            String url="jdbc:mysql://10.20.208.165:3306/"+dbName;
             connection= DriverManager.getConnection(url,user,password);
         }catch (Exception e){
             e.printStackTrace();

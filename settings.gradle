@@ -1,1 +1,1 @@
-include ':app', ':interactactivity', ':activitylifttest', ':weekthree', ':weekthree2', ':weekthree3', ':weekthree4', ':weekfour', ':weekfive', ':weekfive-touch', ':weeksix', ':intentsdemo', ':weekseven', ':weekeight', ':weeknine', ':week10', ':week11', ':week12'
+include ':app', ':interactactivity', ':activitylifttest', ':weekthree', ':weekthree2', ':weekthree3', ':weekthree4', ':weekfour', ':weekfive', ':weekfive-touch', ':weeksix', ':intentsdemo', ':weekseven', ':weekeight', ':weeknine', ':week10', ':week11', ':week12', ':week13', ':tmp'

@@ -26,11 +26,12 @@ public class Reader {
         this.reader_name=reader_name;
     }
 
-    public String getReader_password(){
+    public String getReader_password() {
         return reader_password;
     }
-    public void setReader_password(String reader_password){
-        this.reader_password=reader_password;
+
+    public void setReader_password(String reader_password) {
+        this.reader_password = reader_password;
     }
 
     public String getReader_type(){

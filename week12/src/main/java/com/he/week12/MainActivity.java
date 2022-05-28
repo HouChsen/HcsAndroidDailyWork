@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.socket_client).setOnClickListener(onClickListenter);
         findViewById(R.id.URL_connection).setOnClickListener(onClickListenter);
         findViewById(R.id.http_connection).setOnClickListener(onClickListenter);
-//        findViewById(R.id.mysql_connection).setOnClickListener(onClickListenter);
+        findViewById(R.id.mysql_connection).setOnClickListener(onClickListenter);
 //        findViewById(R.id.download_manage).setOnClickListener(onClickListenter);
     }
 
@@ -42,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
                     break;
 
                 case R.id.http_connection:
-                    //intent.setClass(MainActivity.this, HttpURLConnectionActivity.class);
+                    intent.setClass(MainActivity.this, HttpURLConnectionActivity.class);
                     startActivity(intent);
                     break;
                 case R.id.mysql_connection:
-                    //intent.setClass(MainActivity.this, MysqlConnectionActivity.class);
+                    intent.setClass(MainActivity.this, MysqlConnectionActivity.class);
                     startActivity(intent);
                     break;
 //                case R.id.download_manage:

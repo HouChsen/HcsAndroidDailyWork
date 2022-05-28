@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.StringBuilderPrinter;
 import android.view.View;
 import android.webkit.WebView;
@@ -41,9 +42,14 @@ public class URLConnectionActivity extends AppCompatActivity {
                     public void run() {
                         response=GetPostUtil.sendGet(urlstr+"getpage.jsp","name=YTUer");
                         handler.sendEmptyMessage(0x123);
+                        Log.d("TAG1:","aaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+
                     }
                 }.start();
+                Log.d("TAG2:","aaaaaaaaaaaaaaaaaaaaaaaaaaaa");
                 showWeb.loadUrl(urlstr+"getpage.jsp?name=YTUer");
+                Log.d("TAG3:","aaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+
             }
         });
         findViewById(R.id.post).setOnClickListener(new View.OnClickListener() {
